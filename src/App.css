@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+:root {
+  --pri-color: #184b44;
+  --sec-color: #7fcc26;
+  --ter-color: #549d34;
+  --lit-color: #cdd7d8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* UTILS START */
+body {
+  background-color: var(--lit-color);
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.eco-btn {
+  color: var(--sec-color);
+  background-color: var(--pri-color);
+  font-weight: bold;
+  border-radius: 35px;
+  text-decoration: none;
+  border: 1px solid var(--pri-color);
+  transition: color 0.3s ease, background-color 0.5s ease;
 }
+.eco-btn:hover {
+  background-color: transparent;
+  color: var(--pri-color);
+}
+/* UTILS END */
+
+/* NAVBAR START */
+.site-title {
+  font-weight: bold;
+  color: var(--ter-color);
+}
+
+a.nav-link {
+  color: var(--pri-color) !important;
+  font-weight: bolder;
+  /* transition: border-bottom 0.5s ease; */
+}
+
+a.nav-link:hover {
+  border-bottom: 1px solid var(--pri-color);
+}
+
+a.nav-link.active {
+  border-bottom: 1px solid var(--pri-color);
+}
+
+/* NAVBAR END */

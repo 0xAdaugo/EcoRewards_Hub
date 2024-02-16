@@ -26,8 +26,8 @@ h6 {
 }
 
 .eco-btn {
-  color: var(--sec-color);
-  background-color: var(--pri-color);
+  color: var(--pri-color);
+  background-color: transparent;
   font-weight: bold;
   border-radius: 35px;
   text-decoration: none;
@@ -35,10 +35,34 @@ h6 {
   transition: color 0.3s ease, background-color 0.5s ease;
 }
 .eco-btn:hover {
-  background-color: transparent;
+  color: var(--sec-color);
+  background-color: var(--pri-color);
+}
+
+.eco-sec-btn {
   color: var(--pri-color);
+  background-color: var(--sec-color);
+  font-weight: bold;
+  border-radius: 35px;
+  text-decoration: none;
+  border: 1px solid var(--pri-color);
+  transition: color 0.3s ease, background-color 0.5s ease;
+}
+.eco-sec-btn:hover {
 }
 /* UTILS END */
+
+/* SUPPORT FORM */
+.modal {
+  background-color: rgba(7, 7, 7, 0.548);
+  background-blend-mode: saturation;
+}
+
+.modal-content {
+  background-color: var(--lit-color);
+  border-radius: 0;
+}
+/* SUPPORT FORM */
 
 /* NAVBAR START */
 .site-title {
@@ -46,17 +70,17 @@ h6 {
   color: var(--ter-color);
 }
 
-a.nav-link {
+.nav-link {
   color: var(--pri-color) !important;
-  font-weight: bolder;
-  /* transition: border-bottom 0.5s ease; */
+  transition: border-bottom 0.5s ease;
 }
 
-a.nav-link:hover {
+.nav-link:hover {
   border-bottom: 1px solid var(--pri-color);
+  /* font-weight: bolder; */
 }
 
-a.nav-link.active {
+.nav-link.active {
   border-bottom: 1px solid var(--pri-color);
 }
 

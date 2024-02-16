@@ -3,7 +3,7 @@ import logo from "../../assets/img/ecoRewardsHub-logo.png";
 export default function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
           <a
             className="navbar-brand m-0 d-flex align-items-center justify-space-between"
@@ -34,9 +34,15 @@ export default function Header() {
           >
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="./">
+                <button
+                  className="nav-link"
+                  aria-current="page"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#supportForm"
+                >
                   Support
-                </a>
+                </button>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="./">

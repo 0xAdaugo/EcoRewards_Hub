@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <p className="text-center">Footer here</p>;
+  return (
+    <footer className="pt-5">
+      <p className="text-center">Footer here</p>
+    </footer>
+  );
 }

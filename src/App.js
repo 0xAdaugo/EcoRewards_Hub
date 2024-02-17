@@ -6,7 +6,7 @@ import SupportForm from "./components/common/SupportForm";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <Header />
       <Footer />
       <SupportForm />

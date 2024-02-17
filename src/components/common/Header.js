@@ -2,8 +2,8 @@ import logo from "../../assets/img/ecoRewardsHub-logo.png";
 
 export default function Header() {
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg fixed-top">
+    <header style={{backgroundColor: "red"}} className="container-fluid">
+      <nav className="navbar navbar-expand-lg fixed-top container">
         <div className="container-fluid">
           <a
             className="navbar-brand m-0 d-flex align-items-center justify-space-between"

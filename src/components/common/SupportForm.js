@@ -27,7 +27,7 @@ export default function SupportForm() {
                 <div className="mb-md-3">
                   <div className="row">
                     <div className="col-12 col-md-6 mb-3 mb-md-0">
-                      <label for="firstName" className="form-label">
+                      <label htmlFor="firstName" className="form-label">
                         First name
                       </label>
                       <input
@@ -38,7 +38,7 @@ export default function SupportForm() {
                       />
                     </div>
                     <div className="col-12 col-md-6 mb-3 mb-md-0">
-                      <label for="lastName" className="form-label">
+                      <label htmlFor="lastName" className="form-label">
                         Last name
                       </label>
                       <input
@@ -51,7 +51,7 @@ export default function SupportForm() {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label for="email" className="form-label">
+                  <label htmlFor="email" className="form-label">
                     Email address
                   </label>
                   <input
@@ -65,7 +65,7 @@ export default function SupportForm() {
                   </small>
                 </div>
                 <div className="mb-3">
-                  <label for="tel" className="form-label">
+                  <label htmlFor="tel" className="form-label">
                     Phone (optional)
                   </label>
                   <input
@@ -79,13 +79,13 @@ export default function SupportForm() {
                   </small>
                 </div>
                 <div className="mb-3">
-                  <label for="subject" className="form-label">
+                  <label htmlFor="subject" className="form-label">
                     Subject
                   </label>
                   <input type="text" className="form-control" id="subject" />
                 </div>
                 <div className="mb-3">
-                  <label for="message" className="form-label">
+                  <label htmlFor="message" className="form-label">
                     Message
                   </label>
                   <textarea

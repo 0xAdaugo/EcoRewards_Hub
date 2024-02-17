@@ -65,6 +65,9 @@ h6 {
 /* SUPPORT FORM */
 
 /* NAVBAR START */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .site-title {
   font-weight: bold;
   color: var(--ter-color);
@@ -85,3 +88,13 @@ h6 {
 }
 
 /* NAVBAR END */
+
+/* FOOTER */
+footer,
+footer a {
+  color: var(--pri-color) !important;
+}
+footer a {
+  text-decoration: none;
+}
+/* FOOTER */

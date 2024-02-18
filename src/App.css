@@ -9,6 +9,7 @@
   --sec-color: #7fcc26;
   --ter-color: #549d34;
   --lit-color: #cdd7d8;
+  --white-color: #ffffff;
 }
 
 /* UTILS START */
@@ -26,29 +27,56 @@ h6 {
 }
 
 .eco-btn {
-  color: var(--pri-color);
-  background-color: transparent;
+  color: var(--sec-color);
+  background-color: var(--pri-color);
+  border: 1px solid var(--pri-color);
+  padding: 5px 25px !important;
+  font-size: 18px !important;
   font-weight: bold;
   border-radius: 35px;
   text-decoration: none;
-  border: 1px solid var(--pri-color);
   transition: color 0.3s ease, background-color 0.5s ease;
 }
 .eco-btn:hover {
-  color: var(--sec-color);
-  background-color: var(--pri-color);
-}
-
-.eco-sec-btn {
   color: var(--pri-color);
   background-color: var(--sec-color);
+  border: 1px solid var(--sec-color);
+}
+
+.cta-btn {
+  color: var(--lit-color) !important;
+  background-color: var(--pri-color) !important;
+  border-radius: 0;
   font-weight: bold;
-  border-radius: 35px;
+  padding: 12px 35px !important;
+}
+.cta-btn .fa-solid,
+.sec-btn .fa-solid {
+  transition: transform 0.3s ease;
+}
+.cta-btn:hover .fa-solid,
+.sec-btn:hover .fa-solid {
+  transform: scale(1.3) rotate(30deg);
+}
+
+.sec-btn {
+  color: var(--pri-color);
+  background-color: var(--sec-color);
+  border: 1px solid var(--sec-color);
+  border-radius: 0;
+  font-weight: bold;
   text-decoration: none;
-  border: 1px solid var(--pri-color);
   transition: color 0.3s ease, background-color 0.5s ease;
 }
-.eco-sec-btn:hover {
+.sec-btn:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+.eco-btn:hover,
+.cta-btn:hover,
+.sec-btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px !important;
 }
 /* UTILS END */
 
@@ -66,7 +94,7 @@ h6 {
 
 /* NAVBAR START */
 header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 .site-title {
   font-weight: bold;
@@ -88,6 +116,13 @@ header {
 }
 
 /* NAVBAR END */
+
+/* Home */
+h1.text-body-emphasis span {
+  color: var(--ter-color);
+  font-weight: bold;
+}
+/* Home */
 
 /* FOOTER */
 footer,

@@ -2,8 +2,12 @@ import logo from "../../assets/img/ecoRewardsHub-logo.png";
 
 export default function Header() {
   return (
-    <header style={{backgroundColor: "red"}} className="container-fluid">
-      <nav className="navbar navbar-expand-lg fixed-top container">
+    <header
+      className="nav-wrapper container-fluid fixed-top p-0"
+      // className="nav-wrapper container-fluid p-0"
+      style={{ backgroundColor: "#f6f6f6" }}
+    >
+      <nav className="navbar navbar-expand-lg container">
         <div className="container-fluid">
           <a
             className="navbar-brand m-0 d-flex align-items-center justify-space-between"
@@ -15,8 +19,15 @@ export default function Header() {
               height={40}
               className="d-inline-block align-text-middle mx-auto"
             />
-            <span className="site-title">&nbsp;EcoRewards Hub</span>
+            <span className="site-title d-none d-md-inline">
+              &nbsp;EcoRewards Hub
+            </span>
           </a>
+          <div className="d-md-none nav-btn">
+            <a href="./" className="eco-btn mx-1 py-1 px-3" type="submit">
+              Get started
+            </a>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -50,7 +61,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <div className="nav-btn">
+            <div className="nav-btn d-none d-md-inline">
               <a href="./" className="eco-btn mx-1 py-1 px-3" type="submit">
                 Get started
               </a>

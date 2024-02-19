@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import siteLogo from "../../assets/img/ecoRewardsHub-logo.png";
 
 export default function Header() {
@@ -9,9 +10,9 @@ export default function Header() {
     >
       <nav className="navbar navbar-expand-lg container">
         <div className="container-fluid">
-          <a
+          <Link
             className="navbar-brand m-0 d-flex align-items-center justify-space-between"
-            href="./"
+            to="/"
           >
             <img
               src={siteLogo}
@@ -22,11 +23,15 @@ export default function Header() {
             <span className="site-title d-none d-md-inline">
               &nbsp;EcoRewards Hub
             </span>
-          </a>
+          </Link>
           <div className="d-md-none nav-btn">
-            <a href="./" className="eco-btn mx-1 py-1 px-3" type="submit">
+            <Link
+              to="/get-started"
+              className="eco-btn mx-1 py-1 px-3"
+              type="submit"
+            >
               Get started
-            </a>
+            </Link>
           </div>
           <button
             className="navbar-toggler"
@@ -56,15 +61,19 @@ export default function Header() {
                 </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./">
+                <a className="nav-link" href="/#about-us">
                   About us
                 </a>
               </li>
             </ul>
             <div className="nav-btn d-none d-md-inline">
-              <a href="./" className="eco-btn mx-1 py-1 px-3" type="submit">
+              <Link
+                to="./get-started"
+                className="eco-btn mx-1 py-1 px-3"
+                type="submit"
+              >
                 Get started
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <div className="hero container col-xxl-8 px-4 py-5">
@@ -23,10 +25,10 @@ function Hero() {
             </strong>
           </p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" className="btn cta-btn btn-lg px-4 me-md-2">
+            <Link to="/get-started" className="btn cta-btn btn-lg px-4 me-md-2">
               &nbsp;Get Started&nbsp;
               <i className="fa-solid fa-flag-checkered"></i>
-            </button>
+            </Link>
             <button
               type="button"
               className="btn sec-btn btn-lg px-4"

@@ -122,6 +122,123 @@ h1.text-body-emphasis span {
   color: var(--ter-color);
   font-weight: bold;
 }
+.ourProcesses {
+  background-color: var(--white-color);
+}
+
+/* stepper */
+.stepper {
+  margin: 0 auto;
+}
+
+.heading__three {
+  font-size: 22px;
+  font-weight: 500;
+  color: #3e4e68;
+  line-height: 26px;
+  margin: 0;
+}
+
+.paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3e4e68;
+  line-height: 22px;
+  margin: 0;
+}
+
+.stepper__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .stepper__row {
+    display: block;
+  }
+  .stepper--horizontal {
+    margin-bottom: 30px;
+  }
+  .stepper--horizontal:after {
+    display: none;
+  }
+}
+
+.stepper--horizontal {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stepper--horizontal__circle {
+  /* background: url("http://res.cloudinary.com/dhwx8elvg/image/upload/v1499441107/step-circle-icon_zkr7qg.svg"); */
+  /* filter: invert(25%) sepia(29%) saturate(831%) hue-rotate(122deg)
+    brightness(89%) contrast(95%); */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.stepper--horizontal__circle__text {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--pri-color);
+}
+
+.stepper--horizontal__details {
+  align-self: center;
+  text-align: center;
+}
+
+.stepper--horizontal__details .paragraph {
+  margin-top: 2px;
+}
+
+.stepper--horizontal:last-child:after {
+  content: "";
+  display: none;
+}
+
+.stepper--horizontal:after {
+  content: url("http://res.cloudinary.com/dhwx8elvg/image/upload/v1499445091/stepper-line_nddqqf.svg");
+  filter: invert(25%) sepia(29%) saturate(831%) hue-rotate(122deg)
+    brightness(89%) contrast(95%);
+  position: absolute;
+  right: -220px;
+  width: 100%;
+  top: 8px;
+}
+
+.stepper--horizontal--disabled .stepper--horizontal__circle {
+  background: url("http://res.cloudinary.com/dhwx8elvg/image/upload/v1499451438/step-circle-icon--disabled_xakuwy.svg");
+  opacity: 0.4;
+}
+
+.stepper--horizontal--disabled .stepper--horizontal__circle__text {
+  color: rgba(62, 78, 104, 0.7);
+}
+
+.stepper--horizontal--disabled .stepper--horizontal__details .paragraph {
+  margin-top: 2px;
+  color: rgba(62, 78, 104, 0.8);
+}
+
+.stepper--horizontal--disabled .stepper--horizontal__details .heading__three {
+  color: rgba(62, 78, 104, 0.7);
+}
+
+.stepper .fa-solid {
+  color: var(--pri-color);
+  font-size: 38px;
+}
+
+/* stepper */
+
 /* Home */
 
 /* FOOTER */

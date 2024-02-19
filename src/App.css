@@ -239,6 +239,15 @@ h1.text-body-emphasis span {
 
 /* stepper */
 
+/* Partners */
+.partners {
+  background-color: var(--pri-color);
+}
+.partners h2 {
+  color: var(--white-color);
+}
+/* Partners */
+
 /* Home */
 
 /* FOOTER */

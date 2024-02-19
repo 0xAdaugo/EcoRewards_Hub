@@ -1,4 +1,4 @@
-import logo from "../../assets/img/ecoRewardsHub-logo.png";
+import siteLogo from "../../assets/img/ecoRewardsHub-logo.png";
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
             href="./"
           >
             <img
-              src={logo}
+              src={siteLogo}
               alt="EcoRewards Hub"
               height={40}
               className="d-inline-block align-text-middle mx-auto"

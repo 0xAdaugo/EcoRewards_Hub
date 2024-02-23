@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import { routes } from "./routes";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/common/Header";
-import Home from "./components/pages/Home";
 import Footer from "./components/common/Footer";
 import SupportForm from "./components/common/SupportForm";
-import GetStarted from "./components/common/GetStarted";
 
 function App() {
   return (
@@ -13,9 +12,14 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/get-started" element={<GetStarted />} />
-          {/* <Home /> */}
+          {Object.values(routes).map((component) => (
+            <Route
+              key={component.key}
+              exact
+              path={component.path}
+              element={<component.name />}
+            />
+          ))}
         </Routes>
       </main>
       <Footer />

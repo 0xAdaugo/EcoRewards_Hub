@@ -1,7 +1,9 @@
-export default function Dashboard() {
+function Dashboard() {
   return (
     <>
-      <p>Dashboard</p>
+      <p className="py-5">Dashboard</p>
     </>
   );
 }
+
+export default Dashboard;

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 // import Dashboard from "../pages/dashboard/Dashboard";
+import "./GetStarted.css";
 
 export default function GetStarted() {
   const noRef = null;

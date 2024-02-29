@@ -1,10 +1,11 @@
 import "./Dashboard.css";
 import siteLogo from "../../../assets/img/ecoRewardsHub-logo.png";
 import { Link } from "react-router-dom";
+import Summary from "./Summary";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard vh-85 d-flex flex-column pt-5">
+    <div className="dashboard d-flex flex-column pt-5">
       <nav className="navbar navbar-expand-lg navbar-light bg-light pt-4">
         <div className="container-fluid">
           <a className="navbar-brand d-flex align-items-center" href="./">
@@ -48,6 +49,19 @@ const Dashboard = () => {
               </button>
               <button
                 className="nav-link"
+                id="v-pills-trash-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-trash"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-trash"
+                aria-selected="false"
+              >
+                <i className="fa-solid fa-trash"></i>
+                <span className="d-none d-md-inline">&nbsp;Trash Entry</span>
+              </button>
+              <button
+                className="nav-link"
                 id="v-pills-profile-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#v-pills-profile"
@@ -59,19 +73,6 @@ const Dashboard = () => {
                 <i className="fa-solid fa-money-bill-1-wave"></i>
                 <span className="d-none d-md-inline">&nbsp;Payment</span>
               </button>
-              {/* <button
-                className="nav-link"
-                id="v-pills-disabled-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-disabled"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-disabled"
-                aria-selected="false"
-                disabled
-              >
-                Disabled
-              </button> */}
               <button
                 className="nav-link"
                 id="v-pills-messages-tab"
@@ -107,7 +108,16 @@ const Dashboard = () => {
                 aria-labelledby="v-pills-home-tab"
                 tabIndex="0"
               >
-                Summmary
+                <Summary />
+              </div>
+              <div
+                className="tab-pane fade"
+                id="v-pills-trash"
+                role="tabpanel"
+                aria-labelledby="v-pills-trash-tab"
+                tabIndex="0"
+              >
+                Trash Entry
               </div>
               <div
                 className="tab-pane fade"
@@ -118,15 +128,6 @@ const Dashboard = () => {
               >
                 Payment
               </div>
-              {/* <div
-                className="tab-pane fade"
-                id="v-pills-disabled"
-                role="tabpanel"
-                aria-labelledby="v-pills-disabled-tab"
-                tabIndex="0"
-              >
-                Disabled
-              </div> */}
               <div
                 className="tab-pane fade"
                 id="v-pills-messages"

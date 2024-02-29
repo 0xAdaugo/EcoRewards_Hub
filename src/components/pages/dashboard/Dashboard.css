@@ -50,6 +50,31 @@
   border-bottom: 0px !important;
 }
 
+.total-orders {
+  background-image: linear-gradient(
+    -20deg,
+    #2b5876 0%,
+    #4e4376 100%
+  ) !important;
+}
+
+.clients {
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  ) !important;
+}
+
+.followers {
+  background-image: linear-gradient(
+    to top,
+    #0ba360 0%,
+    #3cba92 100%
+  ) !important;
+}
+
 @media (min-width: 768px) {
   .sidebar {
     min-width: 130px !important;

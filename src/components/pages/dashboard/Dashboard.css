@@ -1,0 +1,82 @@
+:root {
+  --main-bg-color: var(--ter-color);
+  /* --main-bg-color: #afafaf; */
+}
+
+/* header.nav-wrapper {
+  display: none;
+} */
+
+.vh-85 {
+  height: 85vh !important;
+}
+
+.sidebar button {
+  /* padding:20px 50px; */
+  border-top-right-radius: 35px;
+  border-radius: 0 !important;
+}
+
+.sidebar button.active {
+  color: var(--white-color) !important;
+  border-top-left-radius: 35px !important;
+  border-bottom-left-radius: 35px !important;
+  background-color: var(--main-bg-color) !important;
+}
+
+.sidebar {
+  background-color: var(--white-color);
+  height: 100% !important;
+}
+
+.main {
+  background-color: var(--main-bg-color);
+}
+
+.dashboard .tab-pane {
+  color: var(--white-color);
+  background-color: var(--main-bg-color) !important;
+  padding: 25px !important;
+}
+
+.dashboard .tab-content {
+  width: 100%;
+  height: 100% !important;
+  background-color: var(--main-bg-color);
+}
+
+.nav-link.active,
+.nav-link:hover {
+  border-bottom: 0px !important;
+}
+
+.total-orders {
+  background-image: linear-gradient(
+    -20deg,
+    #2b5876 0%,
+    #4e4376 100%
+  ) !important;
+}
+
+.clients {
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  ) !important;
+}
+
+.followers {
+  background-image: linear-gradient(
+    to top,
+    #0ba360 0%,
+    #3cba92 100%
+  ) !important;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    min-width: 130px !important;
+  }
+}

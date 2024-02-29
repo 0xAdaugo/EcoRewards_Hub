@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+#dev
+/src/sample.html
+/src/components/MyComponent.js
+
 # production
 /build
 

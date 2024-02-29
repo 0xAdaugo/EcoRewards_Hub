@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { routes } from "./routes";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import SupportForm from "./components/common/SupportForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-fluid p-0">
+      <Header />
+      <main>
+        <Routes>
+          {Object.values(routes).map((component) => (
+            <Route
+              key={component.key}
+              exact
+              path={component.path}
+              element={<component.name />}
+            />
+          ))}
+        </Routes>
+      </main>
+      <Footer />
+      <SupportForm />
     </div>
   );
 }
